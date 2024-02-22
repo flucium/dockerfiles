@@ -1,0 +1,1 @@
+docker buildx build . -t jupyter_with_conda_aarch64 --platform linux/arm64
