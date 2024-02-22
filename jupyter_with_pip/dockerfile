@@ -1,0 +1,12 @@
+FROM ubuntu:latest
+
+RUN apt update && apt upgrade -y && \
+apt install vim wget curl git python3 python3-pip -y && \
+pip3 install jupyterlab && \
+mkdir ~/workspace && \
+cd ~/workspace
+
+EXPOSE 8080
+EXPOSE 8888
+
+CMD /bin/bash

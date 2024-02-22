@@ -1,0 +1,1 @@
+docker buildx build . -t jupyter_with_pip
